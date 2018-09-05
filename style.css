@@ -1,0 +1,45 @@
+.container {
+	width: 100vw;  /* VW -> Largura da viewport */
+	height: 100vh; /* VH -> Altura da ViewPort*/
+	background: #6C7A89; 
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.box {
+	width: 350px;
+	height: 500px;
+	background: #fff;
+	box-shadow: 9px 7px 5px #000;
+}
+
+ .screen{
+ 	width: 340px;
+ 	height: 100px;
+ 	background: #ccc; 	
+ 	margin-top: 5px;
+ 	margin-left: 5px;
+ }
+
+
+ .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.button {
+	text-align: center;
+    box-sizing: border-box;
+    padding: 1.25rem;
+    margin: 5px;
+    background-color: silver;
+    width: calc((100% / 4) - 5px); /* calco para descontar a margem da largura do box se aumenta a marge tem que ajustar aqui tb */
+}
+
+body {
+	margin: 0;
+}
