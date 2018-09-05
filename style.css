@@ -17,27 +17,50 @@
 }
 
  .screen{
+ 	box-shadow: 1px 1px 1px #000;
  	width: 340px;
  	height: 100px;
  	background: #ccc; 	
- 	margin-top: 5px;
+ 	margin-top: 15px;
  	margin-left: 5px;
+ 	margin-bottom: 15px;
+ 	padding-bottom: 20px;
  }
 
 
- .wrapper {
+ .wrapper { 	
+ 	padding: auto;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     
 }
 .button {
+	box-shadow: 1px 1px 1px #000;
 	text-align: center;
     box-sizing: border-box;
     padding: 1.25rem;
-    margin: 5px;
+    margin: 6px;
     background-color: silver;
-    width: calc((100% / 4) - 5px); /* calco para descontar a margem da largura do box se aumenta a marge tem que ajustar aqui tb */
+    width: calc((90% / 4) - 5px); /* calco para descontar a margem da largura do box se aumenta a marge tem que ajustar aqui tb */
+}
+
+.zero {
+	box-shadow: 1px 1px 1px #000;
+	text-align: center;
+    box-sizing: border-box;
+    padding: 1.25rem;
+    margin: 6px;
+    background-color: silver;
+    width: calc((190% / 4) - 5px); /* calco para descontar a margem da largura do box se aumenta a marge tem que ajustar aqui tb */
+}
+
+.click:hover {	
+	box-shadow: -1px -1px -1px #ccc;
+	cursor: pointer;
+	position: relative;
+	top: 1px;
+	left: 1px;
 }
 
 body {
