@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Calculadora</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator Project</title>
 	<link rel="stylesheet" href="style.css">
-</head>
-<body>
+	<script type="text/javascript" src="calculator.js"></script>
+	<!--CSS Normalize -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Import gogole fonts-->
+	<style> @import url('https://fonts.googleapis.com/css?family=Press+Start+2P'); </style>
 
-	<div class="container">
-		<div class="box">
-			<div class="screen"></div>
-			<div class="wrapper">
-				
-				<div class="button click"> 7 </div>
-				<div class="button click"> 8 </div>
-				<div class="button click"> 9 </div>
-				<div class="button click">/</div>
-				<div class="button click "> 4 </div>
-				<div class="button click"> 5 </div>
-				<div class="button click"> 6 </div>
-				<div class="button click">*</div>
-				<div class="button click"> 1 </div>
-				<div class="button click"> 2 </div>
-				<div class="button click"> 3 </div>
-				<div class="button click">-</div>
-				<div class="zero click"> 0 </div>
-				<div class="button click">.</div>
-				<div class="button click">+</div>
-			</div>
-		</div>
-	</div>
+</head>
+
+<body>
+	<div class="container col-md-12">
+		<div class="calculator col-md-3">
+			<section class="screen input-group input-group-lg">
+				<input type="text" name="visor" id="visor" class="form-control" maxlength="10" size="11" value="">
+			</section><!-- End screen section-->
+
+			<section class="buttons">
+				<button type="button" class="btn-lg btn-default" name="btn7" value="7" onclick="envia(this.value);"> 7 </button>
+				<button type="button" class="btn-lg btn-default" name="btn8" value="8" onclick="envia(this.value);"> 8 </button>
+				<button type="button" class="btn-lg btn-default" name="btn9" value="9" onclick="envia(this.value);"> 9 </button>
+				<button type="button" class="btn-lg btn-default" name="btn/" value="/" onclick="envia(this.value);"> / </button>
+			</section><!-- End buttons section-->
+
+			<section class="buttons">
+				<button type="button" class="btn-lg btn-default" name="btn4" value="4" onclick="envia(this.value);"> 4 </button>
+				<button type="button" class="btn-lg btn-default" name="btn5" value="5" onclick="envia(this.value);"> 5 </button>
+				<button type="button" class="btn-lg btn-default" name="btn6" value="6" onclick="envia(this.value);"> 6 </button>
+				<button type="button" class="btn-lg btn-default" name="btnX" value="*" onclick="envia(this.value);"> X </button>
+			</section><!-- End buttons section-->
+
+			<section class="buttons">
+				<button type="button" class="btn-lg btn-default" name="btn1" value="1" onclick="envia(this.value);"> 1 </button>
+				<button type="button" class="btn-lg btn-default" name="btn2" value="2" onclick="envia(this.value);"> 2 </button>
+				<button type="button" class="btn-lg btn-default" name="btn3" value="3" onclick="envia(this.value);"> 3 </button>
+				<button type="button" class="btn-lg btn-default" name="btn-" value="-" onclick="envia(this.value);"> - </button>
+			</section><!-- End buttons section-->
+
+			<section class="buttons">
+				<button type="button" class="btn-lg btn-danger" name="btnC" value="C" onclick="envia(this.value);"> C </button>
+				<button type="button" class="btn-lg btn-default" name="btn0" value="0" onclick="envia(this.value);"> 0 </button>
+				<button type="button" class="btn-lg btn-primary" name="btn=" value="=" onclick="envia(this.value);"> = </button>
+				<button type="button" class="btn-lg btn-default" name="btn+" value="+" onclick="envia(this.value);"> + </button>
+			</section>
+			<!--End buttons section-->
+
+		</div> <!-- End calculator div-->
+
+	</div> <!-- End container div-->
 
 </body>
+
 </html>
