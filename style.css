@@ -7,16 +7,30 @@
 	justify-content: center;
 	align-items: center;
 
-}
+	}
 
 .box {
 	width: auto;
 	height: auto;
 	background: #fff;
 	box-shadow: 9px 7px 5px #000;
-}
+	}
 
+.centered {
+    margin: 0 auto !important;
+    float: none !important;
+	}
 
+.teste{
+	padding: 15px;
+	width:auto;
+	height:auto;
+	background:#1c2d66;
+	position:absolute;
+	z-index:100;
+	top:auto%;
+	
+	}
 
  .wrapper { 	
  	padding: auto;
@@ -24,7 +38,7 @@
     flex-wrap: wrap;
     width: 100%;
     
-}
+	}
 
 .calculator{
 	box-align: center;
@@ -35,6 +49,7 @@
 	font-family: 'Press Start 2P';
 	font-size: 10px;
 	margin-bottom: 15px;
+	padding: 10px;
   }
   
   .buttons{
